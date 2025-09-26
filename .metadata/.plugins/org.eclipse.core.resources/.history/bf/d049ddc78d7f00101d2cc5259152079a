@@ -1,0 +1,55 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista06 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		// Intervalo numérico
+		
+		System.out.println("Informe um número");
+		int num1 = scanner.nextInt();
+		
+		if(num1 >= 10 && num1 <= 20) {
+			System.out.println("Número dentro do intervalo");
+		} else {
+			System.out.println("Fora do intervalo");
+		}
+		
+		// Acesso à festa
+		
+		System.out.println("\n\n Informe a idade: ");
+		int idade = scanner.nextInt();
+		System.out.println("Possui convite? (true/false) ");
+		boolean convite = scanner.nextBoolean();
+		if(idade >= 18 && convite) {
+			System.out.println("Entrada permitida");
+		} else {
+			System.out.println("Entrada não permitida");
+		}
+		
+		// Categoria de esporte
+		System.out.println("\n\nInforme a idade: ");
+		int idade1 = scanner.nextInt();
+		if(idade1 < 12 || idade1 > 60) {
+			System.out.println("Categoria especial");
+		} else {
+			System.out.println("Categoria normal");
+		}
+		
+		// Desconto no produto
+		System.out.println("\n\n Informe o valor do produto");
+		double valor = scanner.nextDouble();
+		System.out.println("Informe a forma de pagamento (avista ou cartão)");
+		String pagamento = scanner.next();
+		if(valor > 100 && pagamento.equalsIgnoreCase("avista") ) {
+			double desconto = (valor * 0.10);
+			System.out.println("O novo valor é de: "+ desconto);
+		} else {
+			System.out.println("O valor é: "+pagamento);
+		}
+	}
+
+}

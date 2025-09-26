@@ -1,0 +1,53 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Teste1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		int idd;
+		for(int cont4 = 1; cont4 <= 10; cont4 ++) {
+			System.out.println("Informe a idade: ");
+			idd = sc.nextInt();
+			if(idd <= 12) {
+				System.out.println("Criança");
+			} else if (idd <= 17) {
+				System.out.println("Adolescente");
+			} else if (idd <= 59) {
+				System.out.println("Adulto");
+			} else {
+				System.out.println("Idoso");
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,21 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Informe a idade: ");
+		int idade3 = scanner.nextInt();
+		System.out.println("Possuí carta? (true/false)");
+		boolean carta = scanner.nextBoolean();
+		if(idade3 >= 18 && carta) {
+			System.out.println("Pode dirigir");
+		} else {
+			System.out.println("Não pode dirigir");
+		}
+	}
+
+}

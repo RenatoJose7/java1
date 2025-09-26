@@ -1,0 +1,19 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// Contador
+		int contador = 1;
+		do {
+			System.out.println(contador);
+			contador ++;
+		} while (contador >= 30);
+
+	}
+
+}

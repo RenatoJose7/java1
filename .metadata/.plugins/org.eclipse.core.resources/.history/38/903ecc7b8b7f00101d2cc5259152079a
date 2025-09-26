@@ -1,0 +1,34 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista06 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		// Intervalo numérico
+		
+		System.out.println("Informe um número");
+		int num1 = scanner.nextInt();
+		
+		if(num1 <= 10 && num1 >= 20) {
+			System.out.println("Número dentro do intervalo");
+		} else {
+			System.out.println("Fora do intervalo");
+		}
+		
+		// Acesso à festa
+		System.out.println("\n Informe a idade: ");
+		int idade = scanner.nextInt();
+		System.out.println("Possui convite? (true/fa");
+		boolean convite = scanner.nextBoolean();
+		if(idade >= 18 && convite) {
+			System.out.println("Entrada permitida");
+		} else {
+			System.out.println("Entrada não permitida");
+		}
+
+	}
+
+}

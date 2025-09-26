@@ -1,0 +1,57 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// Contador
+		int contador = 1;
+		do {
+			System.out.println(contador);
+			contador ++;
+		} while (contador <= 30);
+
+		// Adivinhação de número
+		System.out.println("----------------------------");
+		System.out.println("Adivinhe o número");
+		int adv;
+		do {
+			adv = sc.nextInt();
+			if(adv == 5) {
+				System.out.println("Você acertou! ");
+			} else {
+				System.out.println("Tente novamente: ");
+			}
+		} while (adv != 5);
+		
+		// Verificação de peso na mala 
+		System.out.println("----------------------------");
+		System.out.println("Informe o peso da mala (Kg)");
+		int peso;
+		do {
+			peso = sc.nextInt();
+			if (peso > 23) {
+				System.out.println("Peso excedido");
+				System.out.println("Tente novamente: ");
+			} else {
+				System.out.println("Peso dentro do limite.");
+			}
+		} while (peso >23);
+		
+		// Verificar quantidade de páginas lidas na semana
+		System.out.println("----------------------------");
+		int dias = 1;
+		int paginas = 0;
+		do {
+			System.out.println("Informe o número de páginas lidos no dia " + dias);
+			dias = sc.nextInt();
+			paginas = paginas + dias;
+			dias ++;
+		} while (dias < 7);
+		
+	}
+
+}

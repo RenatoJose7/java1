@@ -1,0 +1,33 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class For {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		for(int cont = 0; cont <= 10; cont ++) {
+			System.out.println(cont);
+		}
+		int conta = 0;
+		while (conta < 10) {
+			conta ++;
+		}
+		
+		for (int texto = 1; texto <= 3; texto ++) {
+			System.out.println("Hoje é quinta");
+		}
+		System.out.println("--------------------------");
+		int salario;
+		for (int cont = 1; cont <= 5; cont ++) {
+			salario = sc.nextInt();
+			if(salario <= 1500) {
+				System.out.println("Você terá aumento");
+			} else {
+				System.out.println("Sem aumento");
+			}
+		}
+	}
+
+}

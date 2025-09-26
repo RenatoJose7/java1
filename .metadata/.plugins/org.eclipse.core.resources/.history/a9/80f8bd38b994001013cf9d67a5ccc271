@@ -1,0 +1,32 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// Contador
+		int contador = 1;
+		do {
+			System.out.println(contador);
+			contador ++;
+		} while (contador <= 30);
+
+		// Adivinhação de número
+		System.out.println("----------------------------");
+		System.out.println("Adivinhe o número");
+		int num = 5;
+		int adv;
+		do {
+			adv = sc.nextInt();
+			if(adv == 5) {
+				System.out.println("Você acertou! ");
+			} else {
+			System.out.println("Tente novamente");
+			}
+		}
+	}
+
+}

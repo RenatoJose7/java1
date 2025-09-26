@@ -1,0 +1,32 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+
+		System.out.println("-------------------------------------------------");
+		System.out.println("Informe 8 valores");
+		int[] val = new int [8];
+		for(int i = 0; i<=7; i++) {
+			System.out.println("Valores["+i+"]: ");
+			val[i] = sc.nextInt();
+		}
+		System.out.println("Informe mais um valor: ");
+		int[] comparativo = new int [1];
+		comparativo[1] = sc.nextInt();
+		if(comparativo[1] == val[8]) {
+			System.out.println("Existem valores iguais dentro do vetor.");
+		} else {
+			System.out.println("Não existem valores iguais dentro do vetor");
+		}
+	
+	}
+		
+		
+	}
+
+

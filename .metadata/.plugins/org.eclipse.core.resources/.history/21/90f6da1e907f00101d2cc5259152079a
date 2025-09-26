@@ -1,0 +1,22 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("\n\n Informe o valor do produto");
+		double valor = scanner.nextDouble();
+		System.out.println("Informe a forma de pagamento (avista ou cartão)");
+		String pagamento = scanner.next();
+		if(valor > 100 && pagamento.equalsIgnoreCase("avista") ) {
+			double desconto = (valor * 0.10) - valor;
+			System.out.println("O novo valor é de: "+ desconto);
+		} else {
+			System.out.println("O valor é: "+pagamento);
+		}
+	}
+
+}

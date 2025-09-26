@@ -1,0 +1,23 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Teste1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.println("--------------------------------------------------------");
+		for (int seq1 = 1; seq1 >= 50; seq1 += 2) {
+			System.out.println(seq1);
+		}
+	}
+}

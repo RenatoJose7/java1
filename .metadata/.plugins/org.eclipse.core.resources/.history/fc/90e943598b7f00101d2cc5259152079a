@@ -1,0 +1,55 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class OperadoresLogicos {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+//		System.out.println("Qual sua idade? ");
+//		int idade = scanner.nextInt();
+//		System.out.println("Você tem ingresso? (true/false): ");
+//		boolean ingresso = scanner.nextBoolean();
+//		
+//		if(idade >= 18 && ingresso) {
+//			System.out.println("Entrada Permitida");
+//		} else {
+//			System.out.println("Entrada negada");
+//		}
+//
+//		System.out.println("_______________________");
+//		System.out.println("Qual sua nota? (0 a 10) ");
+//		double nota = scanner.nextDouble();
+//		System.out.println("Qual sua frequência (0 a 100) ");
+//		int frequencia = scanner.nextInt();
+//		
+//		if(nota >= 7 || frequencia >= 75) {
+//			System.out.println("Aprovado");
+//		} else {
+//			System.out.println("Reprovado");
+//		}
+//		System.out.println("_______________________");
+//		System.out.println("Sistema de login");
+//		System.out.println("Você é administrador? (true/false): ");
+//		boolean adm = scanner.nextBoolean();
+//		System.out.println("Você está logado? (true/false): ");
+//		boolean login = scanner.nextBoolean();
+//		if(adm && login) {
+//			System.out.println("Acesso permitido");
+//		} else {
+//			System.out.println("Acesso negado");
+//		}
+		
+		System.out.println("_______________________");
+		System.out.println("Informe uma letra: ");
+		String vogal = scanner.next();
+		if(vogal.equalsIgnoreCase("a")|| vogal.equalsIgnoreCase("e")) {
+			System.out.println("É uma vogal ");
+		} else {
+			System.out.println("É uma consoante");
+		}
+		
+	}
+
+}

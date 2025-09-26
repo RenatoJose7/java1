@@ -1,0 +1,19 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] idade = new int [5];
+		idade[0] = 18;
+		idade[1] = 27;
+		idade[2] = 13;
+		idade[3] = 50;
+		idade[4] = 40;
+
+	}
+
+}

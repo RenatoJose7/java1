@@ -1,0 +1,39 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class lista15 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o nome de 5 frutas");
+		String[] nomes = new String[5];
+		for(int i = 0; i < 5; i++) {
+			System.out.println("nome["+i+"]: ");
+			nomes[i] = sc.next();
+		}
+		System.out.println("frutas escolhidas: ");
+		for(int i = 0; i < 5; i++) {
+			System.out.println(nomes[i]);
+		}
+		
+		
+		// Vetor de números inteiros
+		
+		System.out.println("-------------------------------------------------");
+		int[] num = new int [10];
+		for(int i = 0; i<=10; i++) {
+			System.out.println("Valores["+i+"]: ");
+			num[i] = sc.nextInt();
+		}
+		System.out.println("Numeros escolhidos");
+		for(int i = 0; i<=10; i++) {
+			System.out.println(num[i]);
+		}
+		
+		
+		
+	}
+
+}

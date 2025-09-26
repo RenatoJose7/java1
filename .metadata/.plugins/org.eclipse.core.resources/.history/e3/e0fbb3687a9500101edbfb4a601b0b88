@@ -1,0 +1,14 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista14 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		for(int cont = 0; cont <= 10; cont++) {
+			System.out.println(cont);
+		}
+	}
+
+}

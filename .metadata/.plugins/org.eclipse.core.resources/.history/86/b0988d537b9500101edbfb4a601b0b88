@@ -1,0 +1,39 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista14 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// 1 - Contador
+		for(int cont = 0; cont <= 10; cont++) {
+			System.out.println(cont);
+		}
+		
+		// 2 - Somando números de 1 a 100
+		System.out.println("-------------------------------------------------");
+		int soma = 0;
+		for(int cont = 0; cont <= 50; cont ++) {
+			soma += cont;
+			System.out.println(soma);
+		}
+		
+		// 3 - Imprimir números pares de 1 a 20
+		System.out.println("-------------------------------------------------");
+		for(int i = 0; i <= 20; i++) {
+			System.out.println("Escolha um número");
+			int numero2  = sc.nextInt();
+			int div = numero2 % 2;
+			if(div == 0 ) {
+				System.out.println(i);
+			} else {
+				System.out.println();
+			}
+		
+		}
+		
+	}
+
+}

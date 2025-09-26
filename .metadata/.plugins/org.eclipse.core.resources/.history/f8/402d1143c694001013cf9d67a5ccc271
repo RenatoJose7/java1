@@ -1,0 +1,54 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class Lista13 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// contador
+		for(int cont = 1; cont <=30; cont ++) {
+			System.out.println(cont);
+		}
+		
+		// Classificação de idades
+		
+		System.out.println("--------------------------");
+		int idade;
+		for(int cont = 1; cont <= 10; cont++) {
+			System.out.println("Informe a idade: ");
+			idade = sc.nextInt();
+			if (idade < 18) {
+				System.out.println("Menor de idade");
+			} else {
+				System.out.println("Maior de idade");
+			}
+		}
+		
+		// Eleição
+		
+		System.out.println("--------------------------");
+		System.out.println("Eleições 2026");
+		System.out.println("- 1,2,3,4 = voto para os respectivos candidatos;"
+				+ "- 5 = voto nulo;"
+				+ "- 6 = voto em branco;"
+				+ "");
+		int voto;
+		for(int cont1 = 1; cont1 <= 5; cont1 ++) {
+			System.out.println("Informe seu voto: ");
+			voto = sc.nextInt();
+			if (voto == 1 || voto == 2 || voto == 3 || voto == 4) {
+				System.out.println("Você votou no candidato X");
+			} else if (voto == 5) {
+				System.out.println("Você votou nulo");
+			} else if (voto == 6) {
+				System.out.println("Você votou em branco");
+			} else {
+				System.out.println("Voto inválido");
+			}
+		}
+
+	}
+
+}
